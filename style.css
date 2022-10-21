@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    background-color: hsl(273, 75%, 66%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.illustration-woman-mobile {
+    width: 255px;
+}
+
+.container {
+    margin-top: 12em;
+    padding: 3em 2em;
+    border-radius: 2em;
+    width: 75%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.illustration-woman-desktop {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.2em 0 0.5em 0;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.slider_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding-top: 1em;
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+}
+
+.slider_content:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.hr_line {
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+.hide_content {
+    display: none;
+    font-weight: 400;
+    font-size: 13px;
+    width: 90%;
+    color: hsl(0deg 2% 34% / 60%);
+    margin: 1em 0 0.5em 0;
+}
+
+.arrow_down {
+    transition: all 0.2s ease-in;
+}
+
+.show {
+    display: block;
+}
+
+.box1 {
+    margin-top: -12.5em;
+}
+
+.box2 {
+    width: 100%;
+}
+
+.animation {
+    transform: rotate(180deg);
+}
+
+.font_theme {
+    font-weight: 700;
+}
+
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        padding: 6em 0 6em 0;
+    }
+    h1 {
+        text-align: left;
+        /* margin: 0; */
+    }
+    .illustration-woman-mobile {
+        display: none;
+    }
+    .illustration-woman-desktop {
+        display: block;
+        margin: 0 0 0 -140px;
+        position: absolute;
+        left: 55px;
+        width: 100%;
+        height: 100%;
+    }
+    .box1 {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 90%;
+        height: 100%;
+        background-image: url("images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: -385% 66%;
+    }
+    .box2 {
+        width: 80%;
+    }
+    .illustration-box-desktop {
+        z-index: 1;
+        position: absolute;
+        left: 60px;
+        top: 345px;
+    }
+}
+
+
+/* 
+VdarkDesaturatedBlue: hsl(238, 29%, 16%)
+Soft red: hsl(14, 88%, 65%) */
+
+
+/* Soft violet: hsl(273, 75%, 66%)
+   Soft blue: hsl(240, 73%, 65%) */
+
+
+/*
+Very darkGrayishBlue:hsl(237, 12%, 33%)
+Dark grayish blue: hsl(240, 6%, 50%)
+Light grayish blue: hsl(240, 5%, 91%) */
